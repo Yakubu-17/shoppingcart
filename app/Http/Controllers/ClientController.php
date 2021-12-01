@@ -30,4 +30,8 @@ class ClientController extends Controller
         return view('client.signup');
     }
 
+    public function orders(){
+        return view('admin.orders');
+    }
+
 }
