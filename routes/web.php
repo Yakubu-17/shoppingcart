@@ -26,6 +26,11 @@ Route::get('/admin', [AdminController::class, 'admin']);
 
 Route::get('/addcategory', [CategoryController::class, 'addcategory']);
 Route::get('/categories', [CategoryController::class, 'categories']);
+Route::post('/savecategory', [CategoryController::class, 'savecategory']);
+Route::get('/edit_category/{id}', [CategoryController::class, 'edit_category']);
+Route::post('/updatecategory', [CategoryController::class, 'updatecategory']);
+Route::get('/delete_category/{id}', [CategoryController::class, 'delete_category']);
+
 
 Route::get('/addslider', [SliderController::class, 'addslider']);
 Route::get('/sliders', [SliderController::class, 'sliders']);
